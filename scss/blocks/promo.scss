@@ -33,13 +33,13 @@
     padding-top: 97px;
     padding-bottom: 87px;
 
-    background-image: linear-gradient(111.04deg, #e2e2e2 0.39%, rgba(255, 255, 255, 0) 86.46%), url("img/bg-1@1x.png"), url("img/bg-2@1x.png");
+    background-image: linear-gradient(111.04deg, #e2e2e2 0.39%, rgba(255, 255, 255, 0) 86.46%), url("../img/bg-1@1x.png"), url("../img/bg-2@1x.png");
     background-repeat: no-repeat;
     background-position: center, left, right;
     background-size: cover, 442px auto, 588px auto;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: linear-gradient(111.04deg, #e2e2e2 0.39%, rgba(255, 255, 255, 0) 86.46%), url("img/bg-1@2x.png"), url("img/bg-2@2x.png");
+      background-image: linear-gradient(111.04deg, #e2e2e2 0.39%, rgba(255, 255, 255, 0) 86.46%), url("../img/bg-1@2x.png"), url("../img/bg-2@2x.png");
     }
 
 

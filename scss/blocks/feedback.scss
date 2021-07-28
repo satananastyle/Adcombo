@@ -48,7 +48,7 @@
     width: 40px;
     height: 26px;
 
-    background-image: url("img/quotes.svg");
+    background-image: url("../img/quotes.svg");
     background-repeat: no-repeat;
     background-size: contain;
   }
@@ -63,7 +63,7 @@
     width: 40px;
     height: 26px;
 
-    background-image: url("img/quotes.svg");
+    background-image: url("../img/quotes.svg");
     background-repeat: no-repeat;
     background-size: contain;
     transform: rotate(180deg);
@@ -161,14 +161,14 @@
       top: 0;
       left: calc(36% - 46px);
 
-      background-image: url("img/quotes-green.svg");
+      background-image: url("../img/quotes-green.svg");
     }
 
     &::after {
       top: calc(100% - 17px);
       right: -9px;
 
-      background-image: url("img/quotes-green.svg");
+      background-image: url("../img/quotes-green.svg");
     }
 
     div {
