@@ -1,0 +1,191 @@
+.about {
+  display: table-footer-group;
+
+  background-color: #f8fbff;
+
+  & > div {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  h2 {
+    margin-bottom: 16px;
+
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+
+    &::before {
+      content: "";
+
+      display: block;
+      width: 184px;
+      height: 4px;
+      margin: 0 auto 16px;
+
+      background: #00c368;
+    }
+  }
+}
+
+.about__subtitle {
+  margin-bottom: 31px;
+
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+}
+
+.about__item {
+  position: relative;
+
+  width: 100%;
+  padding: 7px 19px 7px 0;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: left;
+
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  transition: 0.3s;
+
+@include hover;
+
+  &:hover,
+  &:focus {
+    opacity: 0.8;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 7px;
+    right: 5px;
+
+    display: block;
+    width: 11px;
+    height: 19px;
+
+    background-image: url("img/arrow.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: rotate(90deg);
+
+    transition: transform 0.3s;
+  }
+
+  &--open {
+    color: #00c368;
+  }
+
+  &--open::after {
+    transform: rotate(-90deg);
+
+    transition: transform 0.3s;
+  }
+}
+
+.about__icon {
+  display: none;
+}
+
+.about__item:not(:first-of-type) {
+  border-top: 1px solid #e7ebf0;
+}
+
+
+.about__description {
+  height: 0;
+  overflow: hidden;
+
+  text-align: left;
+
+  transition: height 0.3s ease-out;
+
+  p {
+    padding: 9px 19px 9px 0;
+
+    font-size: 16px;
+    line-height: 19px;
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop-min-width) {
+  .about {
+    display: table-cell;
+    width: 50%;
+
+    h2 {
+      font-size: 40px;
+      line-height: 47px;
+    }
+
+    & > div {
+      padding: 101px 73px;
+    }
+  }
+
+  .about__item {
+    padding-top: 12px;
+    padding-bottom: 10px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about {
+    padding: 0 15px;
+  }
+
+  .about__subtitle {
+    margin-bottom: 8px;
+  }
+
+  .about__item {
+    display: inline-block;
+
+    font-size: 24px;
+    line-height: 28px;
+    vertical-align: middle;
+
+    &::after {
+      top: calc(50% - 5px);
+    }
+
+    span {
+      display: inline-block;
+      width: calc(100% - 70px);
+
+      vertical-align: middle;
+    }
+  }
+
+  .about__icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-right: 17px;
+    padding: 5px;
+
+    vertical-align: middle;
+
+    background-color: #e7ebf0;
+    border-radius: 50%;
+
+
+    svg {
+      fill: none;
+    }
+  }
+
+  .about__description {
+    margin-right: 19px;
+    margin-left: 64px;
+  }
+}

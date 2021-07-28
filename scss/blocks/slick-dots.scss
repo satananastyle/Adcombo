@@ -1,0 +1,48 @@
+//Переопределеление стилей слика
+
+.slick-dotted.slick-slider {
+  margin-bottom: 25px;
+}
+
+.slick-dots {
+  position: static;
+
+  vertical-align: middle;
+}
+
+
+.slick-dots li {
+  width: 16px;
+  height: 19px;
+  margin: 0 2px;
+
+  vertical-align: middle;
+}
+
+
+.slick-dots li button {
+  width: 16px;
+  height: 19px;
+  padding: 5.5px 4px;
+}
+
+.slick-dots li button:before {
+  width: 16px;
+  height: 19px;
+
+  font-size: 10px;
+  color: #e7ebf0;
+
+  opacity: 1;
+}
+
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before {
+  color: #00c368;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #a6abbd;
+
+  opacity: 1;
+}

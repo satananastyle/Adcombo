@@ -1,0 +1,14 @@
+@mixin hover {
+  &:hover,
+  &:focus {
+    outline: none;
+    cursor: pointer;
+
+    transition: 0.3s;
+  }
+
+  &:not(:hover),
+  &:not(:focus) {
+    transition: 0.3s;
+  }
+}

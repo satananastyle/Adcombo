@@ -1,0 +1,57 @@
+.slider__item {
+  padding: 30px 57px;
+
+  img {
+    width: 79px;
+    height: auto;
+    margin: 0 auto 13px;
+  }
+
+  p {
+    text-align: center;
+  }
+}
+
+.slider-nav {
+  text-align: center;
+}
+
+.slider-nav__button {
+  display: inline-block;
+  width: 10px;
+  height: 19px;
+  padding: 0;
+
+  font-size: 0;
+  vertical-align: middle;
+
+  background-color: transparent;
+
+@include hover;
+
+  &--prev {
+    transform: rotate(180deg);
+  }
+
+  svg {
+    fill: #a6abbd;
+  }
+
+  &:hover svg,
+  &:focus svg {
+    fill: #00c368;
+  }
+}
+
+.slider-nav__dots {
+  display: inline-block;
+
+  vertical-align: middle;
+}
+
+@media (min-width: $tablet-width) {
+  .slider,
+  .slider-nav {
+    display: none;
+  }
+}

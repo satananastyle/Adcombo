@@ -1,0 +1,101 @@
+.page-header {
+  position: relative;
+
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
+
+.page-header__logo {
+  display: block;
+  width: 207px;
+  margin: 0 auto;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.page-header__nav {
+  display: none;
+}
+
+.page-header__btn {
+  display: none;
+}
+
+@media (min-width: $desktop-min-width) {
+  .page-header {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .page-header__logo {
+    display: inline-block;
+    width: 318px;
+    height: auto;
+    margin: 0;
+    margin-right: 55px;
+
+    vertical-align: middle;
+  }
+
+  .page-header__nav {
+    display: inline-block;
+    width: 40%;
+    margin: 0;
+
+    vertical-align: middle;
+
+    a {
+      display: inline-block;
+      min-width: 117px;
+      margin-right: 50px;
+      padding: 4px 20px;
+
+      font-size: 16px;
+      line-height: 150%;
+      vertical-align: middle;
+      color: #a6abbd;
+
+@include hover;
+
+      &:hover,
+      &:focus {
+        color: white;
+
+        background: #00c368;
+        border-radius: 8px;
+        box-shadow: 0 8px 16px rgba(0, 195, 104, 0.4);
+      }
+    }
+  }
+
+  .page-header__btn {
+    position: absolute;
+    top: 50%;
+    right: 85px;
+
+    display: block;
+    min-width: 117px;
+    margin-top: -12px;
+    padding: 4px 20px;
+
+    font-size: 16px;
+    line-height: 150%;
+    color: white;
+
+    background: #00c368;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 195, 104, 0.4);
+
+@include hover;
+
+    &:hover,
+    &:focus {
+      color: #a6abbd;
+
+      background-color: transparent;
+    }
+  }
+}
