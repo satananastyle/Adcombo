@@ -644,7 +644,7 @@ button {
   .promo {
     padding-top: 97px;
     padding-bottom: 87px;
-    background-image: linear-gradient(111.04deg, #e2e2e2 0.39%, rgba(255, 255, 255, 0) 86.46%), url("img/bg-1@1x.png"), url("img/bg-2@1x.png");
+    background-image: linear-gradient(111.04deg, #e2e2e2 0.39%, rgba(255, 255, 255, 0) 86.46%), url("../img/bg-1@1x.png"), url("../img/bg-2@1x.png");
     background-repeat: no-repeat;
     background-position: center, left, right;
     background-size: cover, 442px auto, 588px auto;
@@ -652,7 +652,7 @@ button {
 }
 @media (min-width: 768px) and (min-resolution: 144dpi), (min-width: 768px) and (min-resolution: 1.5dppx) {
   .promo {
-    background-image: linear-gradient(111.04deg, #e2e2e2 0.39%, rgba(255, 255, 255, 0) 86.46%), url("img/bg-1@2x.png"), url("img/bg-2@2x.png");
+    background-image: linear-gradient(111.04deg, #e2e2e2 0.39%, rgba(255, 255, 255, 0) 86.46%), url("../img/bg-1@2x.png"), url("../img/bg-2@2x.png");
   }
 }
 @media (min-width: 768px) {
@@ -889,7 +889,7 @@ button {
   display: block;
   width: 11px;
   height: 19px;
-  background-image: url("img/arrow.svg");
+  background-image: url("../img/arrow.svg");
   background-repeat: no-repeat;
   background-size: contain;
   transform: rotate(90deg);
@@ -960,7 +960,7 @@ button {
   .about__item::after {
     top: calc(50% - 5px);
   }
-  .about__item p {
+  .about__item span {
     display: inline-block;
     width: calc(100% - 70px);
     vertical-align: middle;
@@ -1024,7 +1024,7 @@ button {
   display: block;
   width: 40px;
   height: 26px;
-  background-image: url("img/quotes.svg");
+  background-image: url("../img/quotes.svg");
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -1036,7 +1036,7 @@ button {
   display: block;
   width: 40px;
   height: 26px;
-  background-image: url("img/quotes.svg");
+  background-image: url("../img/quotes.svg");
   background-repeat: no-repeat;
   background-size: contain;
   transform: rotate(180deg);
@@ -1115,12 +1115,12 @@ button {
   .feedback__first::before {
     top: 0;
     left: calc(36% - 46px);
-    background-image: url("img/quotes-green.svg");
+    background-image: url("../img/quotes-green.svg");
   }
   .feedback__first::after {
     top: calc(100% - 17px);
     right: -9px;
-    background-image: url("img/quotes-green.svg");
+    background-image: url("../img/quotes-green.svg");
   }
   .feedback__first div {
     width: 63%;
