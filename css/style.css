@@ -960,7 +960,7 @@ button {
   .about__item::after {
     top: calc(50% - 5px);
   }
-  .about__item span {
+  .about__item span:not(.about__icon) {
     display: inline-block;
     width: calc(100% - 70px);
     vertical-align: middle;
